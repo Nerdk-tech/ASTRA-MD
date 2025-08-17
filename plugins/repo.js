@@ -13,22 +13,22 @@ cmd({
     filename: __filename,
 },
 async (conn, mek, m, { from, reply }) => {
-    const githubRepoURL = 'https://github.com/Pkphotographer1911/PK-XMD';
+    const githubRepoURL = 'https://github.com/Nerdk-tech/ASTRA-MD';
 
     try {
         const [, username, repoName] = githubRepoURL.match(/github\.com\/([^/]+)\/([^/]+)/);
 
-        const response = await axios.get(`https://api.github.com/repos/Nerdk-tech/ASTRA-MD`);
+        const response = await axios.get(`https://api.github.com/repos/${username}/${repoName}`);
         const repoData = response.data;
 
         const formattedInfo = `
-╭─〔 *PK-XMD REPOSITORY* 〕
+╭─〔 *ASTRA-XMD REPOSITORY* 〕
 │
 ├─ *📌 Repo Name:* ${repoData.name}
 ├─ *👤 Owner:* ${repoData.owner.login}
 ├─ *⭐ Stars:* ${repoData.stargazers_count}
 ├─ *⑂ Forks:* ${repoData.forks_count}
-├─ *📄 Description:* ${repoData.description || 'Powerful WhatsApp Multi-Device Bot by Dami}
+├─ *📄 Description:* ${repoData.description || 'Powerful WhatsApp Multi-Device Bot by Dami'}
 │
 ├─ *🔗 GitHub Link:*
 │   ${repoData.html_url}
@@ -48,7 +48,7 @@ async (conn, mek, m, { from, reply }) => {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363377534493877@newsletter',
-                    newsletterName: 'ASTRA-MD UPDATES',
+                    newsletterName: 'ASTRA-MD',
                     serverMessageId: 110
                 }
             }
