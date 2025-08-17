@@ -1,5 +1,4 @@
-# ASTRA-MD
-𝘼𝙎𝙏𝙍𝘼-𝙈𝘿🖤 WHATSAPP BOT 🖤 PRODUCTIVE AND ANTI-BAN
+
 # 𝘼𝙎𝙏𝙍𝘼-𝙈𝘿🖤
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
